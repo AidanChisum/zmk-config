@@ -66,7 +66,6 @@
    &kp LCTRL &kp LSHFT &kp Z       &kp X      &kp C      &kp V       &kp B &kp N      &kp M      &kp COMMA   &kp DOT        &mt RSHFT FSLH
    &lm NUMBER LSHFT &lt FUNCTION SPACE  &lt NUMBER ENTER            &lt NUMBER ENTER &lt FUNCTION SPACE &lm NUMBER LSHFT
                         >;
-                        label = "BASE";
                 };
                 layer_1 {
 // -----------------------------------------------------------------------------------------
@@ -80,7 +79,6 @@
    &trans   &trans     &trans     &trans    &trans    &trans         &kp N1 &kp N2   &kp N3     &trans      &trans        &kp DEL
                             &trans     &trans       &trans      &trans  &trans   &trans
                         >;
-                        label = "Numbers";
                 };
 
                 layer_2 {
@@ -95,7 +93,6 @@
    &kp LCTRL &kp LGUI &kp LALT &trans   &trans   &trans            &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 
                              &trans &trans   &trans                 &trans   &trans    &trans
                         >;
-                        label = "Function";
                 };
 
                 gaming {
@@ -110,8 +107,8 @@
    &kp T  &kp LCTRL  &kp Z   &kp X  &kp C  &kp V       &none  &none &none &kp LEFT &kp DOWN &kp RIGHT
                   &lt GAMING2 B &kp SPACE  &kp G                 &none  &none &none
                         >;
-                        label = "Gaming B)";
                 };
+                
                 gaming2 {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
@@ -124,7 +121,6 @@
    &trans &trans &trans  &trans &trans &trans      &trans &trans &trans &trans &trans &trans
                    &trans &trans &trans                 &trans &trans &trans
                         >;
-                        label = "Gaming?";
                 };
         };
 };
