@@ -1,6 +1,0 @@
-if shield_CYBERSPACE60
-
-config ZMK_KEYBOARD_NAME
-    default "Cyberspace 60"
-
-endif

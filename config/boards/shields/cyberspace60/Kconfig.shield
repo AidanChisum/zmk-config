@@ -1,2 +1,0 @@
-config shield_CYBERSPACE60
-	def_bool $(shields_list_contains,my_board)

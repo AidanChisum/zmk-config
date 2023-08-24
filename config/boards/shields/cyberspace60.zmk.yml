@@ -1,8 +1,0 @@
-file_format: "1"
-id: cyberspace60
-name: Cyberspace 60
-type: shield
-requires:
-  - pro_micro
-features:
- - keys
