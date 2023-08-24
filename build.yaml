@@ -11,9 +11,7 @@
 #     shield: reviung41
 ---
 include:
-#  - board: nice_nano
-#  - shield: CYBERSPACE60
-  - shield: abomination_left
-    board: seeeduino_xiao_ble
-  - shield: abomination_right
-    board: seeeduino_xiao_ble
+  - board: seeeduino_xiao_ble
+    shield: abomination_left
+  - board: seeeduino_xiao_ble
+    shield: abomination_right
