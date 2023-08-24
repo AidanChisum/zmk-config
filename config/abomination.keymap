@@ -43,6 +43,13 @@
         };
 };
 
+#define DEFAULT 0
+#define NUMBER   1
+#define FUNCTION 2
+#define GAMING  3
+#define GAMING2  4
+
+
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -57,7 +64,7 @@
    &kp ESC &kp Q       &kp W       &kp E      &kp R      &kp T       &kp Y &kp U      &kp I      &kp O      &kp P          &kp BSPC
    &kp TAB &mt LCTRL A &mt LSHFT S &mt LGUI D &mt LALT F &kp G       &kp H &mt LALT J &mt LGUI K &mt LSHFT L &mt RCTRL SEMI &kp SQT
    &kp LCTRL &kp LSHFT &kp Z       &kp X      &kp C      &kp V       &kp B &kp N      &kp M      &kp COMMA   &kp DOT        &mt RSHFT FSLH
-   &lm layer_1 LSHFT &lt layer_2 SPACE  &lt layer_1 ENTER            &lt layer_1 ENTER &lt layer_2 SPACE &lm layer_1 LSHFT
+   &lm NUMBER LSHFT &lt FUNCTION SPACE  &lt NUMBER ENTER            &lt NUMBER ENTER &lt FUNCTION SPACE &lm NUMBER LSHFT
                         >;
                         label = "BASE";
                 };
@@ -84,8 +91,8 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  F1  &kp F2 &kp F3 &kp F4 &kp F5 &kp F6                      &kp F7 &kp F8  &kp F9 &kp F10 &kp F11 &kp F12
-   &mt LSHFT CAPS &trans   &trans &trans   &trans   &to gaming     &kp PG_UP &kp LEFT &kp RIGHT &kp UP &kp DOWN &kp PG_DN
-   &kp LCTRL &kp LGUI &kp LALT &trans   &trans   &to gaming2            &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 
+   &mt LSHFT CAPS &trans   &trans &trans   &trans   &to GAMING     &kp PG_UP &kp LEFT &kp RIGHT &kp UP &kp DOWN &kp PG_DN
+   &kp LCTRL &kp LGUI &kp LALT &trans   &trans   &trans            &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 
                              &trans &trans   &trans                 &trans   &trans    &trans
                         >;
                         label = "Function";
@@ -101,7 +108,7 @@
    &kp ESC &kp N1 &kp Q    &kp W    &kp E   &kp R      &none  &none &none &none  &none &none
    &kp TAB &kp LSHFT  &kp A  &kp S  &kp D  &kp F       &none  &none &none &none &kp UP &none 
    &kp T  &kp LCTRL  &kp Z   &kp X  &kp C  &kp V       &none  &none &none &kp LEFT &kp DOWN &kp RIGHT
-                  &lt gaming2 B &kp SPACE  &kp G                 &none  &none &none
+                  &lt GAMING2 B &kp SPACE  &kp G                 &none  &none &none
                         >;
                         label = "Gaming B)";
                 };
@@ -112,7 +119,7 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &trans &trans &trans  &trans &trans &trans      &trans &trans &trans &trans &trans &to default_layer
+   &trans &trans &trans  &trans &trans &trans      &trans &trans &trans &trans &trans &to DEFAULT
    &trans &trans &trans  &trans &trans &trans      &trans &trans &trans &trans &trans &trans 
    &trans &trans &trans  &trans &trans &trans      &trans &trans &trans &trans &trans &trans
                    &trans &trans &trans                 &trans &trans &trans
@@ -125,10 +132,6 @@
 /**
 #define COMBO_TIMEOUT 60
 
-#define DEFAULT 0
-#define LOWER   1
-#define RAISE   2
-#define DANGER  3
 
 / {
     combos {

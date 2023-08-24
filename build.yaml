@@ -12,6 +12,4 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: abomination_left
-  - board: seeeduino_xiao_ble
-    shield: abomination_right
+    shield: abomination
